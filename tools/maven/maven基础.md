@@ -126,7 +126,7 @@ Assert.assertEquals("","hi");
 提问：
 在刚才的演示过程当中 ，junit jar包在哪里？是怎么加入到classPath 当中去的？maven 是在执行test 命令的时间 动态从本地仓库中去引入junit jar 包，如果找不到就会去远程仓库下载，然后在引入。
 ```
-  ![图片 1.png](https://alibeibei.oss-cn-shanghai.aliyuncs.com/images/maven-repo.png?Expires=1534698347&OSSAccessKeyId=TMP.AQH_I0ABmv95DbtqoPQ7wc2GO5qEavZN2Gtnpa4ep9y8zxmN3EBo0QjbOLF-ADAtAhQFE2mtTBIf_m1aH0f1WzT5cIOP3gIVAL1wTuxmJmcgaM0d27IBw_v6zM18&Signature=10XpBr%2F3Hd3SjZU7UfjnP9%2BbIzA%3D
+  ![图片 1.png](https://alibeibei.oss-cn-shanghai.aliyuncs.com/images/maven-repo.png
 )
 
 ```
@@ -165,7 +165,7 @@ maven 核心功能总结：
     <version>4.0.4.RELEASE</version>
 </dependency>
  ```
-  ![图片 1.png](https://alibeibei.oss-cn-shanghai.aliyuncs.com/images/maven-dep.png?Expires=1534698376&OSSAccessKeyId=TMP.AQH_I0ABmv95DbtqoPQ7wc2GO5qEavZN2Gtnpa4ep9y8zxmN3EBo0QjbOLF-ADAtAhQFE2mtTBIf_m1aH0f1WzT5cIOP3gIVAL1wTuxmJmcgaM0d27IBw_v6zM18&Signature=%2BiJTrg4yOYqCjTVmLt7s7DZBNls%3D
+  ![图片 1.png](https://alibeibei.oss-cn-shanghai.aliyuncs.com/images/maven-dep.png
 )
 
  ```
