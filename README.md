@@ -2,7 +2,7 @@
 
 ---
 #### 1 互联网基础
-##### 1.1 git基础概念与核心命令 
+##### 1.1 [git基础概念与核心命令](https://github.com/XiaLiangYong/java-architect/blob/master/tools/git/git-base.md) 
 ##### 1.2 git服务搭建与版本分支管理
 ##### 1.3 maven得基础概念与核心配置
 ##### 1.4 maven私服使用与插件开发
