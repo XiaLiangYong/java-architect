@@ -18,7 +18,7 @@
 
 持续集成即 Continuous integration（CI） 是一种软件开发实践，即团队开发成员经常集成他们的工作，每次集成都通过自动化的构建（包括编译，发布，自动化测试）来验证，从而尽快地发现集成错误，让团队能够更高效的开发软件。
 ```
-  ![图片 1.png](https://alibeibei.oss-cn-shanghai.aliyuncs.com/images/work_errror.png?Expires=1534700255&OSSAccessKeyId=TMP.AQH_I0ABmv95DbtqoPQ7wc2GO5qEavZN2Gtnpa4ep9y8zxmN3EBo0QjbOLF-ADAtAhQFE2mtTBIf_m1aH0f1WzT5cIOP3gIVAL1wTuxmJmcgaM0d27IBw_v6zM18&Signature=KgT%2F7EuwZEwL3A1TAoYlQYdYuUE%3D
+  ![图片 1.png](https://alibeibei.oss-cn-shanghai.aliyuncs.com/images/work_errror.png
 )
 
 ```
@@ -51,7 +51,7 @@ java -jar jenkins.war --httpPort=8080
 换成：http://mirror.esuni.jp/jenkins/updates/update-center.json 
 镜像源查询：http://mirrors.jenkins-ci.org/status.html
 ```
- ![图片 1.png](https://alibeibei.oss-cn-shanghai.aliyuncs.com/images/plauug.png?Expires=1534700348&OSSAccessKeyId=TMP.AQH_I0ABmv95DbtqoPQ7wc2GO5qEavZN2Gtnpa4ep9y8zxmN3EBo0QjbOLF-ADAtAhQFE2mtTBIf_m1aH0f1WzT5cIOP3gIVAL1wTuxmJmcgaM0d27IBw_v6zM18&Signature=aRxy6jKJVFCGhtI8C0qqJH3kmvw%3D
+ ![图片 1.png](https://alibeibei.oss-cn-shanghai.aliyuncs.com/images/plauug.png
 )
 ### 二、基于jenkins 实现可持续化集成
 ###### 知识点：
@@ -71,26 +71,24 @@ java -jar jenkins.war --httpPort=8080
 ```
 1.	 新建maven job
 ```
- ![图片 1.png](https://alibeibei.oss-cn-shanghai.aliyuncs.com/images/step1.png?Expires=1534700481&OSSAccessKeyId=TMP.AQH_I0ABmv95DbtqoPQ7wc2GO5qEavZN2Gtnpa4ep9y8zxmN3EBo0QjbOLF-ADAtAhQFE2mtTBIf_m1aH0f1WzT5cIOP3gIVAL1wTuxmJmcgaM0d27IBw_v6zM18&Signature=1z%2B%2FOtt655RLfix8FJIjSGVyR64%3D
+ ![图片 1.png](https://alibeibei.oss-cn-shanghai.aliyuncs.com/images/step1.png
 )
 
 ```
 2.	配置checkout 源码
 ```
- ![图片 1.png](https://alibeibei.oss-cn-shanghai.aliyuncs.com/images/step2.png?Expires=1534700501&OSSAccessKeyId=TMP.AQH_I0ABmv95DbtqoPQ7wc2GO5qEavZN2Gtnpa4ep9y8zxmN3EBo0QjbOLF-ADAtAhQFE2mtTBIf_m1aH0f1WzT5cIOP3gIVAL1wTuxmJmcgaM0d27IBw_v6zM18&Signature=u6wM5ru%2B%2BXgLYAW8Jq8aThkcAlw%3D
+ ![图片 1.png](https://alibeibei.oss-cn-shanghai.aliyuncs.com/images/step2.png
 )
 
 ```
 3.	 编写 maven构建 命令
  ```
-  ![图片 1.png](https://alibeibei.oss-cn-shanghai.aliyuncs.com/images/step3.png?Expires=1534700526&OSSAccessKeyId=TMP.AQH_I0ABmv95DbtqoPQ7wc2GO5qEavZN2Gtnpa4ep9y8zxmN3EBo0QjbOLF-ADAtAhQFE2mtTBIf_m1aH0f1WzT5cIOP3gIVAL1wTuxmJmcgaM0d27IBw_v6zM18&Signature=fQxYutpLUY7g0aBqeFAmWCyLGNU%3D
-)
+  ![图片 1.png](https://alibeibei.oss-cn-shanghai.aliyuncs.com/images/step3.png)
 ```
 4.	 自动部署至Tomcat配置
 添加构建后操作：Deploy war/ear to container 项目
 ```
- ![图片 1.png](https://alibeibei.oss-cn-shanghai.aliyuncs.com/images/setp4.png?Expires=1534700550&OSSAccessKeyId=TMP.AQH_I0ABmv95DbtqoPQ7wc2GO5qEavZN2Gtnpa4ep9y8zxmN3EBo0QjbOLF-ADAtAhQFE2mtTBIf_m1aH0f1WzT5cIOP3gIVAL1wTuxmJmcgaM0d27IBw_v6zM18&Signature=3Zx3CDwNFo%2FzCoLkaJf3i9Wa4%2BE%3D
-)
+ ![图片 1.png](https://alibeibei.oss-cn-shanghai.aliyuncs.com/images/step4.png)
 ```
 自动部署的前提条件：
 1.	需要下载 Deploy to container 插件
@@ -106,8 +104,7 @@ java -jar jenkins.war --httpPort=8080
 ```
 构建后操作添加 Deploy war/ear to a container 项目
 ```
- ![step5.png](https://alibeibei.oss-cn-shanghai.aliyuncs.com/images/setp5.png?Expires=1534700583&OSSAccessKeyId=TMP.AQH_I0ABmv95DbtqoPQ7wc2GO5qEavZN2Gtnpa4ep9y8zxmN3EBo0QjbOLF-ADAtAhQFE2mtTBIf_m1aH0f1WzT5cIOP3gIVAL1wTuxmJmcgaM0d27IBw_v6zM18&Signature=j5fJ2aOsFpgxA4KCeRACfsKC%2FzI%3D
-)
+ ![step5.png](https://alibeibei.oss-cn-shanghai.aliyuncs.com/images/step5.png)
 
 配置setting.xml 用于获取上传至nexus 的权限
 vim ~/.m2/settings.xml
@@ -119,8 +116,7 @@ vim ~/.m2/settings.xml
 </server>
 
 ###### 3、集成实现原理
-![step6.png](https://alibeibei.oss-cn-shanghai.aliyuncs.com/images/step6.png?Expires=1534700774&OSSAccessKeyId=TMP.AQH_I0ABmv95DbtqoPQ7wc2GO5qEavZN2Gtnpa4ep9y8zxmN3EBo0QjbOLF-ADAtAhQFE2mtTBIf_m1aH0f1WzT5cIOP3gIVAL1wTuxmJmcgaM0d27IBw_v6zM18&Signature=kP6KqSHoy9qMxmNfo9R0VjVkqCQ%3D
-)
+![step6.png](https://alibeibei.oss-cn-shanghai.aliyuncs.com/images/step6.png)
  
 
 ### 三、jenkins pipeline 核心应用
