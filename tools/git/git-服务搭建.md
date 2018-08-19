@@ -8,7 +8,7 @@
 ```
 GIT是一个分布式版本管理系统，既然是分布那么必定会涉及远程通信，那么GIT是采用什么协议进行远程通信的呢？
 ```
- ![图片 1.png](http://note.youdao.com/yws/res/2081/WEBRESOURCE58c0ed01b5cb675083da458914b72335)
+ ![图片 1.png](https://alibeibei.oss-cn-shanghai.aliyuncs.com/images/%E5%9B%BE%E7%89%87%201.png?Expires=1534697338&OSSAccessKeyId=TMP.AQH_I0ABmv95DbtqoPQ7wc2GO5qEavZN2Gtnpa4ep9y8zxmN3EBo0QjbOLF-ADAtAhQFE2mtTBIf_m1aH0f1WzT5cIOP3gIVAL1wTuxmJmcgaM0d27IBw_v6zM18&Signature=13LS0DNBHj%2FqoKb91TAMJsyR3lg%3D)
 
 
 ###### git支持的四种通信协议：
