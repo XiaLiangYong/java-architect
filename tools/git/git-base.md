@@ -8,25 +8,28 @@
 ###### 1.	存储方式不一样
 ###### 2.	使用方式不一样
 ###### 3.	管理模式不一样
+
+###### 1、存储方式区别
 ```
-1、存储方式区别
 GIT把内容按元数据方式存储类似k/v数据库，而SVN是按文件(新版svn已改成元数据存储)
 	演示git 存储过程演示
 cd .git/objects/df/
 git cat-file -p df70460b4b4aece5915caf5c68d12f560a9fe3e4
 echo 'version1' > text.txt
 git hash-object -w text.txt
-
-2、使用方式区别
+```
+###### 2、使用方式区别
+```
 从本地把文件推送远程服务，SVN只需要commint 而GIT需要 add、commint、push 三个步骤
 
 SVN基本使用过程
  
 
 Git基本使用过程
- 
+ ```
 
-3、版本管理模式区别
+###### 3、版本管理模式区别
+```
 git 是一个分布式的版本管理系统，而要SVN是一个远程集中式的管理系统
 
 集中式
@@ -143,8 +146,9 @@ git log --pretty=format:'%h %s' --graph
 ###### 	GIT提交对像
 ###### 	GIT引用
 
+
+###### 1、GIT存储对像(hashMap)
 ```
-1、GIT存储对像(hashMap)
 Git 是一个内容寻址文件系统，其核心部分是一个简单的键值对数据库（key-value data store），你可以向数据库中插入任意内容，它会返回一个用于取回该值的hash 键。
 
 # git 键值库中插入数据
@@ -170,7 +174,10 @@ git cat-file -p c11e96db44f7f3bc4c608aa7d7cd9ba4ab25066e > README.MF
 所以我们平常用的 git add 其实就是把修改之后的内容 插入到键值库中。当我们执行 git add README.MF 等同于执行了 git hash-object -w README.MF 把文件写到数据库中。
 
 我们解决了存储的问题，但其只能存储内容同并没有存储文件名，如果要进行回滚 怎么知道哪个内容对应哪个文件呢？接下要讲的就是树对象，它解决了文件名存储的问题 。
-2、GIT树对像
+```
+
+###### 2、GIT树对像
+```
 树对像解决了文件名的问题，它的目的将多个文件名组织在一起，其内包含多个文件名称与其对应的Key和其它树对像的用引用，可以理解成操作系统当中的文件夹，一个文件夹包含多个文件和多个其它文件夹。
 
  
@@ -179,8 +186,10 @@ git cat-file -p c11e96db44f7f3bc4c608aa7d7cd9ba4ab25066e > README.MF
 通过以下命令即可查看
 #查看分支树
  git cat-file -p master^{tree} 
+```
 
-3、git提交对象
+###### 3、git提交对象
+```
 一次提交即为当前版本的一个快照，该快照就是通过提交对像保存，其存储的内容为：一个顶级树对象、上一次提交的对像啥希、提交者用户名及邮箱、提交时间戳、提交评论。
 
 $ git cat-file -p b2395925b5f1c12bf8cb9602f05fc8d580311836
@@ -195,8 +204,10 @@ committer tommy <tommy@tuling.com> 1532959457 +0800
 一个提交对像 ==> 存储了树对像的key 及提交评论。 
 
 	演示文件提交过程
+```
 
-4、GIT引用
+###### 4、GIT引用
+``` 
 当我们执行 git branch {branchName} 时创建了一个分支，其本质就是在git 基于指定提交创建了一个引用文件，保存在 .git\refs\heads\ 下。
 	演示分支的创建
  git branch dev 
@@ -216,6 +227,4 @@ git log --pretty=format:'%h %s' --graph
 #查看分支树
 git cat-file -p master^{tree}
 ```
-
-
-
+```
