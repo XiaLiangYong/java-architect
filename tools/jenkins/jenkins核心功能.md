@@ -88,7 +88,7 @@ java -jar jenkins.war --httpPort=8080
 4.	 自动部署至Tomcat配置
 添加构建后操作：Deploy war/ear to container 项目
 ```
- ![图片 1.png](https://alibeibei.oss-cn-shanghai.aliyuncs.com/images/step4.png)
+ ![图片 1.png](https://alibeibei.oss-cn-shanghai.aliyuncs.com/images/setp4.png)
 ```
 自动部署的前提条件：
 1.	需要下载 Deploy to container 插件
@@ -104,7 +104,7 @@ java -jar jenkins.war --httpPort=8080
 ```
 构建后操作添加 Deploy war/ear to a container 项目
 ```
- ![step5.png](https://alibeibei.oss-cn-shanghai.aliyuncs.com/images/step5.png)
+ ![setp5.png](https://alibeibei.oss-cn-shanghai.aliyuncs.com/images/setp5.png)
 
 配置setting.xml 用于获取上传至nexus 的权限
 vim ~/.m2/settings.xml
@@ -116,7 +116,7 @@ vim ~/.m2/settings.xml
 </server>
 
 ###### 3、集成实现原理
-![step6.png](https://alibeibei.oss-cn-shanghai.aliyuncs.com/images/step6.png)
+![setp6.png](https://alibeibei.oss-cn-shanghai.aliyuncs.com/images/step6.png)
  
 
 ### 三、jenkins pipeline 核心应用
