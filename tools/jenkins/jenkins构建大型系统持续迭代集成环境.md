@@ -227,9 +227,4 @@ deploy_war
 	jenkins.sh:  用于被jenkins 远程触发下载指定更新版本
 注：以上脚本分别存储至 env-set.sh  与 Tomcat-deomo.zip 附件中,也可在相关课件目录中去获取
 
-
-部署脚本与目录文件.zip
-
-版本分支管理
-
 ```
