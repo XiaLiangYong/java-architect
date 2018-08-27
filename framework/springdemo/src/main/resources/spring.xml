@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="helloTest" class="com.alibeibei.HelloTest">
+        <constructor-arg name="hello" ref="hello"></constructor-arg>
+    </bean>
+    <bean id="hello" class="com.alibeibei.Hello"></bean>
+
+    <bean id="hello2" class="com.alibeibei.Hello2"></bean>
+    <bean class="com.alibeibei.HelloTest2">
+        <property name="hello2" ref="hello2"></property>
+    </bean>
+    <bean id="hello3" class="com.alibeibei.Hello3" scope="prototype">
+        <constructor-arg name="id" type="java.lang.Integer" value="1"></constructor-arg>
+        <constructor-arg name="name" type="java.lang.String" value="夏天"></constructor-arg>
+    </bean>
+
+    <bean class="com.alibeibei.HelloTest3">
+        <property name="hello3" ref="hello3"></property>
+    </bean>
+    <bean class="com.alibeibei.Hello4" factory-method="build">
+        <constructor-arg name="type" type="java.lang.String" value="A"></constructor-arg>
+    </bean>
+    <bean id="hello5" class="com.alibeibei.Hello5"></bean>
+</beans>
